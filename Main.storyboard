@@ -655,6 +655,21 @@
                         <rect key="contentRect" x="597" y="334" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <value key="minSize" type="size" width="480" height="600"/>
+                        <toolbar key="toolbar" implicitIdentifier="A81302F1-650D-4642-AE72-BC71DEFBF022" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="XXD-MK-eSw">
+                            <allowedToolbarItems>
+                                <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="2Nr-yU-LNJ"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="X9O-e1-AJg"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="4RK-e6-Rds"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="CVg-3F-cv9"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="RvW-mB-Ph2"/>
+                            </allowedToolbarItems>
+                            <defaultToolbarItems>
+                                <toolbarItem reference="2Nr-yU-LNJ"/>
+                                <toolbarItem reference="X9O-e1-AJg"/>
+                                <toolbarItem reference="RvW-mB-Ph2"/>
+                                <toolbarItem reference="4RK-e6-Rds"/>
+                            </defaultToolbarItems>
+                        </toolbar>
                     </window>
                     <connections>
                         <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
@@ -788,7 +803,7 @@
                                 </constraints>
                             </customView>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="bsX-uP-80y" customClass="TableHolderView" customModule="TableTex" customModuleProvider="target">
-                                <rect key="frame" x="155" y="381" width="140" height="80"/>
+                                <rect key="frame" x="155" y="362" width="140" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="4s8-dc-nMs"/>
                                     <constraint firstAttribute="height" constant="80" id="b1J-QN-FqP"/>
@@ -802,7 +817,7 @@
                             <constraint firstAttribute="trailing" secondItem="gzp-Z7-G3l" secondAttribute="trailing" constant="82" id="Kh4-Xn-WCW"/>
                             <constraint firstAttribute="centerX" secondItem="bsX-uP-80y" secondAttribute="centerX" id="boc-gd-NoY"/>
                             <constraint firstItem="gzp-Z7-G3l" firstAttribute="top" secondItem="eGc-p4-J8x" secondAttribute="bottom" constant="34" id="fbW-dS-Y6g"/>
-                            <constraint firstItem="bsX-uP-80y" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="11" id="kgb-V3-86X"/>
+                            <constraint firstItem="bsX-uP-80y" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="30" id="kgb-V3-86X"/>
                             <constraint firstAttribute="centerX" secondItem="eGc-p4-J8x" secondAttribute="centerX" id="tZI-Un-BFV"/>
                             <constraint firstAttribute="bottom" secondItem="gzp-Z7-G3l" secondAttribute="bottom" constant="20" id="yaL-bf-bcC"/>
                         </constraints>
