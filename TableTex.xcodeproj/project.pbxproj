@@ -16,6 +16,7 @@
 		323AE4DC1A9924A80040BF7F /* TableHolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323AE4D31A9924A80040BF7F /* TableHolderView.swift */; };
 		323AE4DE1A9924A80040BF7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323AE4D51A9924A80040BF7F /* ViewController.swift */; };
 		323AE4DF1A9924A80040BF7F /* VisibleTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323AE4D61A9924A80040BF7F /* VisibleTable.swift */; };
+		32AD46811A9E74410023843D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32AD46801A9E74410023843D /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,12 +37,13 @@
 		322F2B901A9921B500FCDA43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		322F2B911A9921B500FCDA43 /* TableTexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableTexTests.swift; sourceTree = "<group>"; };
 		323AE4CE1A9924A80040BF7F /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
-		323AE4D01A9924A80040BF7F /* LaTeXHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaTeXHandler.swift; sourceTree = "<group>"; };
-		323AE4D11A9924A80040BF7F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		323AE4D01A9924A80040BF7F /* LaTeXHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LaTeXHandler.swift; path = ../LaTeXHandler.swift; sourceTree = "<group>"; };
+		323AE4D11A9924A80040BF7F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
 		323AE4D21A9924A80040BF7F /* NSBezierPath + CGPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSBezierPath + CGPath.swift"; sourceTree = "<group>"; };
 		323AE4D31A9924A80040BF7F /* TableHolderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableHolderView.swift; sourceTree = "<group>"; };
-		323AE4D51A9924A80040BF7F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		323AE4D61A9924A80040BF7F /* VisibleTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisibleTable.swift; sourceTree = "<group>"; };
+		323AE4D51A9924A80040BF7F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
+		323AE4D61A9924A80040BF7F /* VisibleTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VisibleTable.swift; path = ../VisibleTable.swift; sourceTree = "<group>"; };
+		32AD46801A9E74410023843D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,13 +67,7 @@
 		322F2B701A9921B500FCDA43 = {
 			isa = PBXGroup;
 			children = (
-				323AE4CE1A9924A80040BF7F /* Cell.swift */,
-				323AE4D01A9924A80040BF7F /* LaTeXHandler.swift */,
-				323AE4D11A9924A80040BF7F /* Main.storyboard */,
-				323AE4D21A9924A80040BF7F /* NSBezierPath + CGPath.swift */,
-				323AE4D31A9924A80040BF7F /* TableHolderView.swift */,
-				323AE4D51A9924A80040BF7F /* ViewController.swift */,
-				323AE4D61A9924A80040BF7F /* VisibleTable.swift */,
+				32AD46801A9E74410023843D /* Images.xcassets */,
 				322F2B7B1A9921B500FCDA43 /* TableTex */,
 				322F2B8E1A9921B500FCDA43 /* TableTexTests */,
 				322F2B7A1A9921B500FCDA43 /* Products */,
@@ -91,6 +87,12 @@
 			isa = PBXGroup;
 			children = (
 				322F2B7E1A9921B500FCDA43 /* AppDelegate.swift */,
+				323AE4D11A9924A80040BF7F /* Main.storyboard */,
+				323AE4D51A9924A80040BF7F /* ViewController.swift */,
+				323AE4D61A9924A80040BF7F /* VisibleTable.swift */,
+				323AE4D01A9924A80040BF7F /* LaTeXHandler.swift */,
+				32AD467F1A9E72380023843D /* Utilities */,
+				32AD467E1A9E72180023843D /* Views */,
 				322F2B7C1A9921B500FCDA43 /* Supporting Files */,
 			);
 			path = TableTex;
@@ -119,6 +121,25 @@
 				322F2B901A9921B500FCDA43 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32AD467E1A9E72180023843D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				323AE4CE1A9924A80040BF7F /* Cell.swift */,
+				323AE4D31A9924A80040BF7F /* TableHolderView.swift */,
+			);
+			name = Views;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		32AD467F1A9E72380023843D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				323AE4D21A9924A80040BF7F /* NSBezierPath + CGPath.swift */,
+			);
+			name = Utilities;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				323AE4DA1A9924A80040BF7F /* Main.storyboard in Resources */,
+				32AD46811A9E74410023843D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

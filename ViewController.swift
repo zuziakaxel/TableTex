@@ -49,14 +49,9 @@ class ViewController: NSViewController, VisibleTableDelegate {
         dropShadow.shadowColor = NSColor(calibratedRed: 121/250, green: 187/250, blue: 248/250, alpha: 1)
         dropShadow.shadowOffset = NSMakeSize(5, 10.0)
         dropShadow.shadowBlurRadius = 10.0
-        contentView.shadow = dropShadow
-        
-        
-        
-        
-        
+        contentView.shadow = dropShadow   
         contentView.needsDisplay = true
-        table = VisibleTable(rows: nbOfRows, columns: nbOfColumns, cellWidth: 70, cellHeight: 40)
+        table = VisibleTable(tableHolderView: self.contentView, rows: nbOfRows, columns: nbOfColumns, cellWidth: 70, cellHeight: 40)
         updateContentView()
         table.drawTableOnView(self.contentView)
         
@@ -76,8 +71,7 @@ class ViewController: NSViewController, VisibleTableDelegate {
 
     @IBAction func generateButtonPressed(sender: AnyObject) {
         
-        table.removeTableFromView(contentView)
-        
+            
     }
     
     func updateColumnsNumber(value: Int) {
@@ -99,6 +93,8 @@ class ViewController: NSViewController, VisibleTableDelegate {
         stepperRows.integerValue = value
         txtRows.integerValue = value
         nbOfRows = value
+        println("------VC---------\n col-\(nbOfColumns) - row - \(nbOfRows)")
+    
         table.updateArray(nbOfColumns, newNumberOfRows: nbOfRows)
         updateContentView()
     }
@@ -107,7 +103,7 @@ class ViewController: NSViewController, VisibleTableDelegate {
         
         cnsContentViewHeight.constant = table.cellHeight * CGFloat(table.rowsCount)
         cnsContentViewWidth.constant = table.cellWidth * CGFloat(table.columnsCount)
-        table.drawTableOnView(contentView)
+//        table.drawTableOnView(contentView)
         
     }
     func resetAll(){
