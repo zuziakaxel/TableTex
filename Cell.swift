@@ -17,7 +17,7 @@ class Cell: NSView {
         var bgColor = NSColor(calibratedRed: 170/250, green: 193/250, blue: 210/250, alpha: 1)
     
         
-        txtField = NSTextField(frame: NSRect(x: 0, y: 0, width: frame.width, height: frame.height))
+        txtField = TableTextField(frame: NSRect(x: 0, y: 0, width: frame.width, height: frame.height))
         txtField.wantsLayer = true
         txtField.backgroundColor = NSColor(calibratedRed: 170/250, green: 193/250, blue: 210/250, alpha: 1)
         txtField.layer?.borderColor = NSColor.whiteColor().CGColor
@@ -31,6 +31,9 @@ class Cell: NSView {
 
         
         
+    }
+    override func mouseDown(theEvent: NSEvent) {
+   
     }
 
     required init?(coder: NSCoder) {

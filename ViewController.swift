@@ -3,11 +3,14 @@ import AppKit
 
 class ViewController: NSViewController, VisibleTableDelegate {
  
-    /// MARK: Steppers
     @IBOutlet weak var stepperColumns: NSStepper!
     @IBOutlet weak var txtColumns: NSTextField!
     @IBOutlet weak var stepperRows: NSStepper!
     @IBOutlet weak var txtRows: NSTextField!
+    @IBOutlet var txtLaTeX: NSTextView!
+    @IBOutlet weak var contentView: TableHolderView!
+    @IBOutlet weak var cnsContentViewWidth: NSLayoutConstraint!
+    @IBOutlet weak var cnsContentViewHeight: NSLayoutConstraint!
     
     @IBAction func rowsDidChangeValue(sender: AnyObject) {
         if sender.integerValue == nbOfRows{
@@ -22,11 +25,7 @@ class ViewController: NSViewController, VisibleTableDelegate {
         updateColumnsNumber(sender.integerValue)
     }
 
-    @IBOutlet var txtLaTeX: NSTextView!
-    @IBOutlet weak var contentView: TableHolderView!
-    @IBOutlet weak var cnsContentViewWidth: NSLayoutConstraint!
-    @IBOutlet weak var cnsContentViewHeight: NSLayoutConstraint!
-    
+
     var table: VisibleTable!
     var nbOfColumns = 1
     var nbOfRows = 1
@@ -64,6 +63,13 @@ class ViewController: NSViewController, VisibleTableDelegate {
         didSet {
         // Update the view, if already loaded.
         }
+    }
+    
+    override func mouseDown(theEvent: NSEvent) {
+        println(theEvent.locationInWindow)
+        println("FRAME")
+        println(contentView.frame)
+        println("KONIEC")
     }
     
 

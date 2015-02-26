@@ -17,6 +17,7 @@
 		323AE4DE1A9924A80040BF7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323AE4D51A9924A80040BF7F /* ViewController.swift */; };
 		323AE4DF1A9924A80040BF7F /* VisibleTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323AE4D61A9924A80040BF7F /* VisibleTable.swift */; };
 		32AD46811A9E74410023843D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32AD46801A9E74410023843D /* Images.xcassets */; };
+		32F674101A9F766C006D65EE /* TableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F6740F1A9F766C006D65EE /* TableTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		323AE4D51A9924A80040BF7F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		323AE4D61A9924A80040BF7F /* VisibleTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VisibleTable.swift; path = ../VisibleTable.swift; sourceTree = "<group>"; };
 		32AD46801A9E74410023843D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		32F6740F1A9F766C006D65EE /* TableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				323AE4CE1A9924A80040BF7F /* Cell.swift */,
+				32F6740F1A9F766C006D65EE /* TableTextField.swift */,
 				323AE4D31A9924A80040BF7F /* TableHolderView.swift */,
 			);
 			name = Views;
@@ -241,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32F674101A9F766C006D65EE /* TableTextField.swift in Sources */,
 				322F2B7F1A9921B500FCDA43 /* AppDelegate.swift in Sources */,
 				323AE4D91A9924A80040BF7F /* LaTeXHandler.swift in Sources */,
 				323AE4DF1A9924A80040BF7F /* VisibleTable.swift in Sources */,

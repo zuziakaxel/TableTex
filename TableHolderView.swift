@@ -9,5 +9,8 @@ class TableHolderView: NSView {
             return true
         }
     }
+    override func mouseDown(theEvent: NSEvent) {
+        
+    }
     
 }

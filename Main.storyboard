@@ -110,7 +110,7 @@
                                                 <action selector="runPageLayout:" target="Ady-hI-5gd" id="Din-rz-gC5"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Print…" keyEquivalent="p" id="aTl-1u-JFS">
+                                        <menuItem title="print…" keyEquivalent="p" id="aTl-1u-JFS">
                                             <connections>
                                                 <action selector="print:" target="Ady-hI-5gd" id="qaZ-4w-aoO"/>
                                             </connections>
@@ -649,7 +649,7 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="LaTeX" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="597" y="334" width="480" height="270"/>
@@ -659,7 +659,7 @@
                             <allowedToolbarItems>
                                 <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="2Nr-yU-LNJ"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="X9O-e1-AJg"/>
-                                <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="4RK-e6-Rds"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" explicitItemIdentifier="NSToolbar// printItem" id="4RK-e6-Rds"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="CVg-3F-cv9"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="RvW-mB-Ph2"/>
                             </allowedToolbarItems>
