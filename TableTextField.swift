@@ -15,11 +15,14 @@ class TableTextField: NSTextField {
 
         
     }
+    
     override func mouseDown(theEvent: NSEvent) {
         println("Cell")
         var keepOn = true
         var isInside = true
         var mouseLocation: NSPoint = theEvent.locationInWindow
+        
+        self.superview?.mouseDown(theEvent)
     }
     
 }

@@ -33,7 +33,7 @@ class Cell: NSView {
         
     }
     override func mouseDown(theEvent: NSEvent) {
-   
+        self.superview?.mouseDown(theEvent)
     }
 
     required init?(coder: NSCoder) {
